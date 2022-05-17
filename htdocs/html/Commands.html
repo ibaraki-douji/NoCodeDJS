@@ -1,0 +1,33 @@
+<div id="commands">
+    <div class="command">
+        <span class="title">Properties</span>
+        <div class="card">
+            <span class="title">Command name</span>
+            <input placeholder="name" id="command-name">
+        </div>
+        <div class="card">
+            <span class="title">Command description</span>
+            <input placeholder="name" id="command-desc">
+        </div>
+        <hr>
+        <div id="options">
+
+        </div>
+        <div class="card" onclick="commands.addOption()">
+            <span class="title">Add new option</span>
+        </div>
+    </div>
+    <div class="action">
+        <span class="title">Actions</span>
+        <div id="actions">
+
+        </div>
+        <div class="card" onclick="commands.addResponse()">
+            <span class="title">Add new action</span>
+        </div>
+    </div>
+    <div>
+        <button onclick="commands.saveCommand()">Save</button>
+        <button onclick="commands.deleteCommand()"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M15 3.999V2H9V3.999H3V5.999H21V3.999H15Z"></path><path fill="currentColor" d="M5 6.99902V18.999C5 20.101 5.897 20.999 7 20.999H17C18.103 20.999 19 20.101 19 18.999V6.99902H5ZM11 17H9V11H11V17ZM15 17H13V11H15V17Z"></path></svg></button>
+    </div>
+</div>
